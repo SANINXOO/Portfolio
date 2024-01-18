@@ -1,0 +1,102 @@
+.wrkExperienceMain{
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    opacity: 0;
+    transform: translateY(220px);
+    transition: opacity 1.8s ease, transform 1.8s ease;
+  
+    &.fade-up {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+.wrkExperienceMain{
+    .heading{
+        h1{
+            font-weight: 900;
+            text-align: center;
+            padding-bottom: 20px;
+            font-size: 40px;
+        }
+        span{
+            color: #f9977b;
+        }
+    }
+    .expirience{
+        display: flex;
+    }
+    .expirience{
+        .expirience_left,.expirience_right{
+            width: 50%;
+            // background-color: red;
+            
+        }
+        .expirience_left{
+            .Exprnce_left_contents{
+                // background-color: yellow !important;
+                width: 360px;
+                margin: auto;
+            }
+            h4{
+                padding-top: 20px;
+                font-weight: 700;
+                font-size: 25px;
+                // text-align: center;
+            }
+            
+        }
+        .line{
+            height: 140px;
+            border-right: 2px solid rgba(0, 0, 0, 0.21);
+        }
+        .expirience_right{
+            .expirience_contents{
+                margin: auto;
+                width: 400px;
+                // background-color: #f9977b;
+            }
+            h4{
+                padding-top: 20px;
+                font-weight: 700;
+                font-size: 25px;
+            }
+        }
+    }
+
+    @media(min-width:300px) and (max-width:575.98px){
+        .expirience_contents,.Exprnce_left_contents{
+            // background-color: yellow;
+            width: 150px !important;
+        }
+        .heading{
+            h1{
+                font-weight: 900;
+                text-align: center;
+                padding-bottom: 20px;
+                font-size: 30px;
+            } 
+        }
+        .line{
+            height: 140px !important;
+        }
+        .expirience_contents{
+            h4{
+                padding-top: 0 !important;
+                font-size: 16px !important;
+            }
+            p{
+                font-size: 12px;
+            }
+        }
+        .Exprnce_left_contents{
+            h4{
+                padding-top: 0 !important;
+                font-size: 16px !important;
+            }
+            p{
+                font-size: 12px;
+            }
+        }
+    }
+}

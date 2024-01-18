@@ -1,0 +1,184 @@
+/* /////////////////////SERVICES-SECTION////////////// */
+.servises-main-div {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+
+  &.fade-up {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.servises-main-div{
+    .service_main_carrdss{
+      padding-top: 40px;
+        display: flex;
+      }
+      .service-main-crd-left,.service-main-crd-right{
+        width: 50%;
+      }
+      .service-main-crd-left{
+        padding-left: 17%;
+      }
+      .service-heading{
+        font-weight: 900;
+        text-align: center;
+        margin-top: 20px;
+        // margin-left: 40px;
+        // font-family: 'Ubuntu', sans-serif;
+        font-size: 40px;
+        letter-spacing: 2px;
+      }
+      .srvs-text{
+        color: #f9977b;
+      }
+      .service-card-main{
+        padding-top: 30px;
+        // display: flex;
+        gap: 15px;
+        // background-color: red;
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+        padding-bottom: 30px;
+      }
+      .service-card{
+        /* background-color: red; */
+        border: 1px solid rgb(221, 221, 221);
+        margin-bottom: 14px;
+        // box-shadow: 0px 1px 10px -3px rgba(0, 0, 0, 0.453);
+        border-radius: 8px;
+        height: 160px;
+        width: 400px;
+        display: flex;
+        transition: .5s;
+      }
+      .service-card:hover{
+         box-shadow: 0px 11px 10px -3px rgba(126, 126, 126, 0.453);
+      }
+      .service-card-left{
+        width: 30%;
+        height: 170px;
+        padding: 45px;
+        /* background-color: yellow; */
+        text-align: center;
+      }
+      .service-card-right{
+        width: 70%;
+        height: 170px;
+        // text-align: center;
+        padding-left: 3%;
+        /* background-color: rgb(0, 255, 55); */
+      }
+      .service-card-right {
+        h3{
+            color: black;
+            font-weight: 900;
+            padding-top: 16%;
+            text-align: left;
+            font-size: 25px;
+            /* padding-left: 3%; */
+            // font-family: 'Ubuntu', sans-serif;
+        }
+        p{
+            text-align: left;
+            // font-family: 'Ubuntu', sans-serif;
+            font-size: 20px;
+            color: gray;
+        }
+      }
+      .pers_icon{
+        font-size: 60px;
+        text-align: center;
+        background-color: rgb(255, 187, 70);
+        border-radius: 50%;
+        padding: 10px;
+        
+      }
+      .service-main-crd-right{
+        h1{
+          font-weight: 900;
+          padding-top: 3%;
+          font-size: 40px;
+          letter-spacing: 2px;
+        }
+        span{
+         color: #f9977b;
+        }
+        p{
+          width: 500px;
+          font-size: 25px;
+        }
+        &.fade-up {
+          opacity: 0;
+          transform: translateY(50px);
+          transition: opacity 0.8s ease, transform 0.8s ease;
+      
+          &.visible {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      }
+
+      @media(min-width:300px) and (max-width:575.98px){
+        .service_main_carrdss{
+          display: inline;
+          justify-content: center !important;
+        }
+        .service-main-crd-left{
+          padding-left: 0;
+          // background-color: red
+        }
+        .service-main-crd-left,.service-main-crd-right{
+          width: 100%;
+        }
+        .service-card{
+          margin-bottom: 14px !important;
+          margin: auto;
+          width: 300px;
+          height: 130px;
+        }
+        .service-card-right{
+          padding-left: 10px;
+        }
+        .service-card-left{
+          padding-left: 5%;
+          padding-top: 12%;
+        }
+        .service-card-right {
+          h3{
+              font-size: 20px;
+          }
+        }
+        .service-main-crd-right{
+          padding: 0px 10px 0px 10px;
+        }
+        .service-main-crd-right{
+          h1{
+            font-size: 30px;
+            letter-spacing: 2px;
+            // background-color: red;
+            width: 100%;
+          }
+          .wht_do_i_help{
+            text-align: center;
+            margin-bottom: 20px;
+          }
+          span{
+           color: #f9977b;
+          }
+          p{
+            width: 300px;
+            font-size: 16px;
+            text-align: justify;
+            // background-color: red;
+            width: 100%;
+          }
+        }
+      
+      }
+      
+      /* /////////////////////SERVICES-SECTION-END////////////// */
+      
+}
